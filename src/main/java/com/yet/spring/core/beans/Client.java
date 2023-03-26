@@ -5,13 +5,23 @@ public class Client {
     private String id;
 
     private String fullName;
-    
+
+    private String city;
     private String greeting;
 
-    public Client(String id, String fullName) {
+    public Client(String id, String fullName, String city) {
         super();
         this.id = id;
         this.fullName = fullName;
+        this.city = city;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getId() {
